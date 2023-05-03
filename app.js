@@ -16,6 +16,10 @@ app.get("*", (req, res)=>{
     res.send("404 | Pagina no encontrada")
 })
 
+app.listen(port,()=>{
+    console.log("Servidor en node.js con express escuchando en el puerto, port")
+})
+
 /*app.get = Obtener un recurso
 app.post = Crear un recurso
 app.put = Actualizar un recurso
